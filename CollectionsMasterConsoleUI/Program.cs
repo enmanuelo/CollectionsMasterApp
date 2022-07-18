@@ -122,11 +122,12 @@ namespace CollectionsMasterConsoleUI
             Console.WriteLine("------------------");
 
             //TODO: Convert the list to an array and store that into a variable
-            int[] newArray = new int[myList.Count];
-            for (int i = 0; i < myList.Count; i++)
-            {
-                newArray[i] = myList[i];
-            }
+            //int[] newArray = new int[myList.Count];
+            //for (int i = 0; i < myList.Count; i++)
+            //{
+            //    newArray[i] = myList[i];
+            //}
+            int[] newArray = myList.ToArray(); // This line does the same as lines 125 - 129
 
             //TODO: Clear the list
             myList.Clear();
